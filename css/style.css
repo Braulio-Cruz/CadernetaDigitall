@@ -2,14 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 .conteiner{
-    width: 2016px;
-    height:1345px ;
+    width: 100%;
+    height:100% ;
     flex-shrink: 0;
-
-    background-color:  yellow;
 }
+
+   /*cores a serem usadas*/
+   :root{
+    --blue: #2499cf;
+
+}
+
 .logo{
     display: flex;
 }
@@ -21,4 +27,46 @@ font-style: normal;
 font-weight: 800;
 line-height: normal;
 
+}
+
+.menu {
+    padding: 25px 40px;
+    width: 100%;
+    background: var(--dark);
+}
+
+.menu ul {
+    position: absolute;
+    top: 50px;
+    left: 900px;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.menu ul li {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.home {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.text {
+    max-width: 37rem;
+    margin-right: 5rem;
+    margin: 2rem;
+}
+
+.text h1{
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    line-height: 4rem;
+    color: var(--blue);
 }
